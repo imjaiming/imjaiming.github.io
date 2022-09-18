@@ -1,0 +1,121 @@
+div.animation {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  z-index: 5;
+  background-color: #e08958;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#the1 {
+  stroke-dasharray: 890px;
+  stroke-dashoffset: 890px;
+  -webkit-animation: fadeInside 0.6s ease-in forwards;
+          animation: fadeInside 0.6s ease-in forwards;
+}
+
+#the2 {
+  stroke-dasharray: 954px;
+  stroke-dashoffset: 954px;
+  -webkit-animation: fadeInside 0.6s ease-in forwards 0.2s;
+          animation: fadeInside 0.6s ease-in forwards 0.2s;
+}
+
+#the2 {
+  stroke-dasharray: 1178px;
+  stroke-dashoffset: 1178px;
+  -webkit-animation: fadeInside 0.6s ease-in forwards 0.3s;
+          animation: fadeInside 0.6s ease-in forwards 0.3s;
+}
+
+#the3 {
+  stroke-dasharray: 1477px;
+  stroke-dashoffset: 1477px;
+  -webkit-animation: fadeInside 0.6s ease-in forwards 0.5s;
+          animation: fadeInside 0.6s ease-in forwards 0.5s;
+}
+
+#the4 {
+  stroke-dasharray: 1195px;
+  stroke-dashoffset: 1195px;
+  -webkit-animation: fadeInside 0.6s ease-in forwards;
+          animation: fadeInside 0.6s ease-in forwards;
+}
+
+#the5 {
+  stroke-dasharray: 1219px;
+  stroke-dashoffset: 1219px;
+  -webkit-animation: fadeInside 0.6s ease-in forwards 0.2s;
+          animation: fadeInside 0.6s ease-in forwards 0.2s;
+}
+
+#the6 {
+  stroke-dasharray: 1451px;
+  stroke-dashoffset: 1451px;
+  -webkit-animation: fadeInside 0.6s ease-in forwards 0.3s;
+          animation: fadeInside 0.6s ease-in forwards 0.3s;
+}
+
+#the7 {
+  stroke-dasharray: 1451px;
+  stroke-dashoffset: 1451px;
+  -webkit-animation: fadeInside 0.6s ease-in forwards 0.4s;
+          animation: fadeInside 0.6s ease-in forwards 0.4s;
+}
+
+#the8 {
+  stroke-dasharray: 628px;
+  stroke-dashoffset: 628px;
+  -webkit-animation: fadeInside 0.6s ease-in forwards 0.5s;
+          animation: fadeInside 0.6s ease-in forwards 0.5s;
+}
+
+#the9 {
+  stroke-dasharray: 1335px;
+  stroke-dashoffset: 1335px;
+  -webkit-animation: fadeInside 0.6s ease-in forwards 0.6s;
+          animation: fadeInside 0.6s ease-in forwards 0.6s;
+}
+
+#the10 {
+  stroke-dasharray: 1262px;
+  stroke-dashoffset: 1262px;
+  -webkit-animation: fadeInside 0.6s ease-in forwards 0.7s;
+          animation: fadeInside 0.6s ease-in forwards 0.7s;
+}
+
+svg {
+  -webkit-animation: fadefill 0.6s ease-in forwards 0.9s;
+          animation: fadefill 0.6s ease-in forwards 0.9s;
+}
+
+@-webkit-keyframes fadeInside {
+  to {
+    stroke-dashoffset: 0px;
+  }
+}
+
+@keyframes fadeInside {
+  to {
+    stroke-dashoffset: 0px;
+  }
+}
+@-webkit-keyframes fadefill {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: white;
+  }
+}
+@keyframes fadefill {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: white;
+  }
+}/*# sourceMappingURL=animation.css.map */

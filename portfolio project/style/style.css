@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: normal;
+}
+
+body {
+  position: relative;
+}
+body img.Orange {
+  position: absolute;
+  top: -15vh;
+  right: 0;
+  z-index: -1;
+  width: 55vw;
+  height: 150vh;
+}
+
+header {
+  padding: 1rem 1rem;
+}
+header ul {
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+}
+header ul li {
+  list-style-type: none;
+}
+header ul li a {
+  text-decoration: none;
+  font-size: 1.75rem;
+  color: rgb(0, 0, 0);
+}
+header ul li a.active {
+  color: #e08958;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  flex-wrap: wrap;
+}
+main section.left {
+  width: 45%;
+  margin: 3rem 3rem 6rem 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 3 1 500px;
+}
+main section.left h1 {
+  color: #e08958;
+  font-size: 4rem;
+}
+main section.left p {
+  font-size: 1.25rem;
+}
+main section.right {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 500px;
+  position: relative;
+}
+main section.right img.myPic {
+  border-radius: 550px;
+  width: 350px;
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 24vh;
+  right: 20vw;
+}
+
+section.table {
+  padding: 1rem;
+  flex: 3 1 500px;
+  margin-top: 5rem;
+}
+section.table table {
+  border-collapse: collapse;
+}
+section.table table tr {
+  border-bottom: 2px solid #393939;
+}
+section.table table tr td {
+  padding: 1rem;
+}
+section.table table tr:hover {
+  background-color: #ffc8a8;
+  transition: all 0.2s ease;
+}
+
+section.picture {
+  flex: 1 1 500px;
+  position: relative;
+}
+section.picture img {
+  width: 450px;
+  height: 600px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+section.picture div.OrengeRect {
+  width: 450px;
+  height: 600px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-color: #e08958;
+  position: absolute;
+  z-index: -1;
+  top: 30px;
+  right: 80px;
+}
+
+section.form {
+  flex: 1 1 600px;
+}
+section.form form {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 4rem;
+}
+section.form form div {
+  padding: 1.5rem;
+}
+section.form form div label {
+  font-size: 1.5rem;
+}
+section.form form div input,
+section.form form div textarea {
+  background-color: #ffbc95;
+  font-size: 1.5rem;
+  padding: 0.5rem 0.7rem;
+  border: none;
+  vertical-align: middle;
+  width: 80%;
+}
+section.form form button {
+  background-color: #b56334;
+  font-size: 1.25rem;
+  border: none;
+  color: aliceblue;
+  padding: 0.75rem 1.25rem;
+  border-radius: 10px;
+  margin: 1rem;
+}
+
+div.line {
+  background-color: #393939;
+  width: 2px;
+}
+
+section.info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex: 1 1 500px;
+  align-items: center;
+  padding: 13rem 0 0 0;
+}
+section.info h2 {
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+footer a {
+  margin: 0rem 1rem;
+}
+
+@media screen and (max-width: 1000px) {
+  img.Orange {
+    opacity: 0.4;
+  }
+  header ul {
+    flex-direction: column;
+  }
+  header ul li {
+    padding: 0.6rem 0rem;
+    border-bottom: 2px solid rgb(134, 134, 134);
+  }
+  header ul li a.active {
+    color: #e08958;
+  }
+  main section.left h1 {
+    font-size: 3rem;
+  }
+  main section.left p {
+    font-size: 1rem;
+  }
+  main section.right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  main section.right img.myPic {
+    position: static;
+  }
+  main section.picture {
+    display: flex;
+    justify-content: center;
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+  }
+  footer a {
+    margin: 1.5rem 10px;
+  }
+  section.form form div input,
+section.form form div textarea {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */
